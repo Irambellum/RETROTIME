@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.pong-container {
+  width: 802px;
+  height: 502px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.pong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.loading-message {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-family: monospace;
+  align-self: start;
+}
+
+.score {
+  display: none;
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  font-size: 40px;
+  align-self: start;
+}
+
+.paddle-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  background-color: white;
+}
+
+.paddle-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  background-color: white;
+}
+
+.center-line {
+  position: absolute;
+  width: 1px;
+  background-color: white;
+  height: 100%;
+}
+
+.ball {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+}
+
+.main-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  margin-bottom: 0;
+  font-family: monospace;
+}
+
+.jumbotron {
+  padding: 20px !important;
+}

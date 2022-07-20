@@ -1,0 +1,27 @@
+{
+  "name": "cobol-js-emscripten",
+  "version": "1.0.0",
+  "description": "This a proof of concept for building COBOL to WebAssembly",
+  "main": "index.js",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "watch": "find c cob scripts -type f | entr ./scripts/build.sh",
+    "start": "cd app && python2 -m SimpleHTTPServer 5500",
+    "clean": "rm -rf tmp",
+    "deploy": "gh-pages -d app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moxon6/cobol-js-emscripten.git"
+  },
+  "author": "Martin Moxon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moxon6/cobol-js-emscripten/issues"
+  },
+  "homepage": "https://github.com/moxon6/cobol-js-emscripten#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
